@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: #9dd0df;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 5% 10px 2%; 
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1px;
+}
+
+
+
+machining-animation {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 15px;}
+
+.end-mill-bit {
+    width: 8px;
+    height: 15px;
+    background-color: silver;
+    position: absolute;
+    bottom: 0;
+    animation: move-bit 10s linear infinite, spin-bit 0.2s linear infinite;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+cutting-line {
+    width: 0%; /* Mulai dengan jalur yang tak terlihat */
+    height: 2px; /* Tebal jalur pahat */
+    background-color: rgba(0, 0, 0, 0.4); /* Warna jalur pahat */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    /* PENERAPAN GERAKAN ANIMASI: Jalur yang perlahan terbuka seiring mata pahat jalan */
+    animation: reveal-line 10s linear infinite;
+}
+
+/* ======================================================== */
+/* ======= DEFINISI GERAKAN ANIMASI (KEYFRAMES) ======= */
+/* ====== ================================================== */
+
+/* A. Gerakan Posisi Mata Pisau Kiri ke Kanan */
+@keyframes move-bit {
+    0% { left: 0%; }
+    100% { left: 100%; }
+}
+
+/* B. Gerakan Rotasi Mata Pisau (Spinner) */
+@keyframes spin-bit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* C. Gerakan Jalur Potong yang Perlahan Terungkap */
+@keyframes reveal-line {
+    0% { width: 0%; }
+    100% { width: 100%; }
+
+
+.logo1 {
+    height: 70px;
+    width: auto;
+}
+
+
+
+.logo-text {
+    font-size: 11px;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+
+.nav1 ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+
+
+.nav1 a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 15px;
+    transition: 0.9s;
+}
+
+
+.nav1 a:hover {
+    background-color: rgb(48, 193, 246);
+transition: 0,2s;}
