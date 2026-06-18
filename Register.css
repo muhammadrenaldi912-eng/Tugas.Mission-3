@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("assets register/kursi bioskop register.jpg") no-repeat center
+      center/cover;
+
+  min-height: 100vh;
+
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 125vh;
+  width: 100%;
+}
+
+.login-box {
+  background: rgba(24, 26, 28, 0.84);
+
+  border-radius: 14px;
+  padding: 40px;
+  width: 100%;
+  max-width: 460px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  width: 163px;
+  height: 44px;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.masuk {
+  color: rgb(255, 255, 255);
+}
+
+.sub-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #f6f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input::placeholder {
+  color: rgba(254, 254, 254, 0.4);
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 45px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translatey(-50%);
+  cursor: pointer;
+  color: rgba(67, 66, 66, 0.5);
+  font-size: 1.1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: rgba(24, 26, 28, 0.8);
+  border: 2px solid rgba(231, 227, 252, 0.23);
+  border-radius: 50px;
+  color: rgb(210, 210, 210);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #fefefe;
+  margin-bottom: 0.5rem;
+  font-family: sans-serif;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+.form-options a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form-options a:hover {
+  text-decoration: underline;
+}
+
+.register-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #3d4142;
+  border: none;
+  border-radius: 50px;
+  color: #f2eaea;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #9a9a9a;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.divider span {
+  padding: 0 10px;
+  font-size: 0.85rem;
+}
+
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background 0.2s ease;
+}
+
+.btn-google:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
